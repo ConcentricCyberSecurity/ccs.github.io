@@ -1,9 +1,7 @@
 version: "3"
 services:
   ccswebsite:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ccswebsite
     deploy:
       replicas: 2
       placement:
