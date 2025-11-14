@@ -1,11 +1,11 @@
 ---
 links:
-  - title: Scaly Anteaters
-    url: "https://en.wikipedia.org/wiki/Pangolin"
-    desc: The helpful Wikipedia entry for Pangolins.
-  - title: Pangolin Trivia
-    url: "https://www.wwf.org.uk/learn/fascinating-facts/pangolins"
-    desc: Top 5 facts about Pangolins from the WWF.
+  - title: Projects
+    url: "https://github.com/Spectre7651"
+    desc: Find my latest projects on Github
+  - title: Take a look at the blog
+    url: "/blog"
+    desc: My blog about projects ive done
   - title: Open-source at Tailscale
     url: "https://tailscale.com/opensource"
     desc: We believe that open source is the past, present, and future of software development.
