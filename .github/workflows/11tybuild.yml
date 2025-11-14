@@ -1,11 +1,25 @@
-name: Eleventy Build
-on: [push]
+name: Build 11ty
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
-  build_deploy:
+  ci:
     runs-on: ubuntu-latest
+    permissions:
+        packages: write
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 21
+
+      - run: npm install
+      - run: npm run build
       - name: Build
         uses: cjerrington/actions-eleventy@master
       - name: Deploy
