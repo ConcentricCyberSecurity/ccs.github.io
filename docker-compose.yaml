@@ -1,0 +1,15 @@
+version: "3"
+services:
+  ccswebsite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+      placement:
+        constraints:
+          - node.hostname == delboy
+      restart_policy:
+        condition: on-failure
+    ports:
+      - 5002:8080
