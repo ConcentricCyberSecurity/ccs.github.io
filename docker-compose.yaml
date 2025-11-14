@@ -8,8 +8,4 @@ services:
         condition: on-failure
     ports:
       - 5002:8080
-    networks:
-      - backend
-networks:
-  backend:
-    external: true
+
